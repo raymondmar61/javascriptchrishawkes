@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chris Hawkes 8 Functions</title>
+<script type="text/javascript">
+	var x = function() {
+		document.write("this is a function");
+	}
+
+	function okayrunnow() {
+		document.write("<br>");
+		document.write("I typed &lt;br&gt; above and below to okayrunnow.");
+		document.write("<br>");
+	}
+
+	function givemeaparameter(word) {
+		document.write(word);
+		document.write("<p>")
+	}
+
+	function addmath(number1, number2) {
+		addition = number1 + number2;
+		document.write(addition);
+		document.write("<p>")
+	}
+
+	function passfunction(num1, num2, thirdArgument) {
+		document.write("The numbers are ", num1, " and " ,num2,"<br>");		
+		thirdArgument();
+		document.write("<p>");
+	}
+
+x();
+okayrunnow();
+givemeaparameter("this is a mother crazy tutorial");
+addmath(5,6); //returns 11
+passfunction(94, 190, function () {document.write("holy crap javascript is a function language")});  //returns The numbers are 94 and 190 <br> holy crap javascript is a function language
+</script>
+</head>
+<body>
+
+</body>
+</html>
